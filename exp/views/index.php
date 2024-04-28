@@ -49,8 +49,7 @@
               type="text"
               class="form-control"
               id="ofen"
-              placeholder="Ofendido"
-              required
+              placeholder="Ofendido" 
             />
             <label for="desch">Descripcion de los hechos</label>
             <input
@@ -76,13 +75,13 @@
             placeholder="Fecha del suceso"
             required
           />
-            <br />
+            <br>
             <div>
               <button type="submit" class="btn btn-primary">Guardar</button>
               <button type="reset" class="btn btn-danger">Cancelar</button>
             </div>
           </form>
-          <br />
+          <br>
           <h5>Listado</h5>
           <hr />
           <table class="table">

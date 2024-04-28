@@ -9,7 +9,7 @@ const app = new (function(){
     this.fden = document.getElementById("fden");
     this.fsuc = document.getElementById("fsuc");
 
-    if (this.idexp.value == "") {
+    if (this.idexp.value === "") {
         fetch("../controllers/save.php", {
             method: "POST", body: form,
         })

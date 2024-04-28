@@ -1,5 +1,5 @@
 <?php
-require_once "./exp/config/Conn.php";
+require_once "../config/Conn.php";
 class Exp extends Conn{
 
     public static function shData(){
