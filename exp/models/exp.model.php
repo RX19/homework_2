@@ -9,8 +9,8 @@ class Exp extends Conn{
         $stmt->execute();
         $res = $stmt->fetchAll();
         return $res;
-        }catch(PDOException $e){
-            $e->getMessage();
+        }catch(PDOException $th){
+            $th->getMessage();
         }
     }
 
@@ -22,8 +22,8 @@ class Exp extends Conn{
             $stmt->execute();
             $res = $stmt->fetch();
             return $res;
-        } catch(PDOException $e){
-            $e->getMessage();
+        } catch(PDOException $th){
+            $th->getMessage();
         }
     }
 
@@ -39,8 +39,8 @@ class Exp extends Conn{
             $stmt->bindValue(":fsuc", $data['fsuc']);
             $stmt->execute();
             return true;
-        } catch(PDOException $e){
-            $e->getMessage();
+        } catch(PDOException $th){
+            $th->getMessage();
         }
     }
 
@@ -56,8 +56,8 @@ class Exp extends Conn{
             $stmt->bindValue(":fsuc", $data['fsuc']);
             $stmt->execute();
             return true;
-        } catch(PDOException $e){
-            $e->getMessage();
+        } catch(PDOException $th){
+            $th->getMessage();
         }
     }
 
@@ -69,8 +69,8 @@ class Exp extends Conn{
             $stmt->bindValue(":idexp", $idexp);
             $stmt->execute();
             return true;
-        } catch(PDOException $e){
-            $e->getMessage();
+        } catch(PDOException $th){
+            $th->getMessage();
         }
     }
 }
