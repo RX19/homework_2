@@ -23,7 +23,7 @@
         <div class="col-sm-6">
           <h5>Formulario para crear Expediente</h5>
           <hr />
-          <form action="javascript:void(0);" onsubmit="exp.save()">
+          <form action="javascript:void(0);" onsubmit="app.save()">
             <input type="hidden" id="id" />
             <label for="dnte">Denunciante</label>
             <input
@@ -52,11 +52,11 @@
               placeholder="Ofendido"
               required
             />
-            <label for="desc">Descripcion de los hechos</label>
+            <label for="desch">Descripcion de los hechos</label>
             <input
             type="text"
             class="form-control"
-            id="desc"
+            id="desch"
             placeholder="Descripcion"
             required
           />

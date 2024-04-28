@@ -14,7 +14,7 @@ class Exp extends Conn{
         }
     }
 
-    public static function getData($idexp){
+    public static function getId($idexp){
         try{
             $sql = "SELECT * FROM expediente WHERE idexp = :idexp";
             $stmt = Conn::getConn()->prepare($sql);
@@ -44,7 +44,7 @@ class Exp extends Conn{
         }
     }
 
-    public static function editData($data){
+    public static function updateData($data){
         try{
             $sql = "UPDATE expediente SET dnte = :dnte, dndo = :dndo, ofen = :ofen, desch = :desch, fden = :fden, fsuc = :fsuc WHERE idexp = :idexp";
             $stmt = Conn::getConn()->prepare($sql);
